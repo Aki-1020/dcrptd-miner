@@ -316,7 +316,8 @@ namespace dcrpt_miner
 
         private Type GetAlgo(uint id) 
         {
-            return id > 124500 ? typeof(Pufferfish2BmbAlgo) : typeof(SHA256BmbAlgo);
+            //return id > 124500 ? typeof(Pufferfish2BmbAlgo) : typeof(SHA256BmbAlgo);
+            return typeof(Pufferfish2BmbAlgo);
         }
 
         private async Task<(bool success, Version version)> GetNodeVersion()
